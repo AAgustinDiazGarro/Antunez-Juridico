@@ -1,0 +1,46 @@
+.heroImage{
+    background-image: url('https://img.freepik.com/fotos-premium/abogado-o-notario-trabajando-documentos-e-informe-caso-importante-firma-abogados_122498-41.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.heroImageOpacity{
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    text-align: end;
+    background-color: rgba(0, 0, 0, 0.484);
+}
+
+.heroImageTitle {
+    width: 50%;
+    padding: 0.5rem;
+    color: white;
+}
+
+.title{    
+    width: 50%;
+    padding: 0.5rem;
+    color: white;
+    align-self: flex-start;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cardsCont{
+    background-color: black;
+}
+
+.titleh2{
+    text-align: center;
+    padding-top: 2rem;
+    color: blanchedalmond;
+}
