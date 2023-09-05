@@ -4,10 +4,7 @@ const Footer = () =>{
 
     return(
         <div className={style.container}>
-            <p>Telefono</p>
-            <p>Email</p>
-            <p>Copryright 2023 Estudio Antunez</p>
-            <p></p>
+            <p>by AGUSTIN DIAZ GARRO</p>
         </div>
     )
 }
