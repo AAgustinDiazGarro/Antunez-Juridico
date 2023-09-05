@@ -109,3 +109,24 @@
 .activ{
     display: none;
 }
+
+.wp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.wp button{
+    min-width: 150px ;
+    width: 50%;
+    margin-top: 3rem;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 0;
+    border-radius: 1rem;
+    background-color: rgb(37, 211, 102);
+    height: 2rem;
+    cursor: pointer;
+}

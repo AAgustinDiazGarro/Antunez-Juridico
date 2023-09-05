@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import style from './Contact.module.css';
 import '../../App.css'
+import { Link, useNavigate } from "react-router-dom";
 
 const Contact = () => {
+    const navigate = useNavigate();
 
     const [form, setForm] = useState({
         email: '',
@@ -87,11 +89,16 @@ const Contact = () => {
     }
 
     return (
-        < >
+        <Fragment >
             <h3 className={style.title}>Hace tu consulta GRATIS</h3>
             <section className={`${style.container}`}>
-                <article>
-                    <h2 > ACA VIENE LA POSIBILIDAD DE CONTACTAR POR WP</h2>
+                <article className={style.wp}>
+
+                    <p>Te dejamos dos maneras de comunicarte con Nosotros, atravez del formulario o por Whats App, de las dos maneras tendras la posibilidad de mandarnos algun escrito para darte una respuesta mas acertada con su caso</p>
+
+                    <Link aria-label="Chat on WhatsApp" to='https://wa.me/543772409159'>
+                        <img alt="Chat on WhatsApp" src='src/assets/WhatsAppButtonGreenLarge.png' width='200' />
+                    </Link>
                 </article>
                 <form className={style.form} action="https://formsubmit.co/agustin87_7@hotmail.com" method="POST" enctype="multipart/form-data">
 
@@ -112,8 +119,8 @@ const Contact = () => {
 
                     <label htmlFor="" className={style.label}>
                         <textarea className={style.label1} name="queries" type="queries" rows="10" cols="40" value={form.queries} onChange={handleForm} placeholder="Mensaje de la consulta"></textarea>
-                    {error.queries && <p className={style.label2}>{error.queries}</p>}
-                        </label>
+                        {error.queries && <p className={style.label2}>{error.queries}</p>}
+                    </label>
 
                     <input type="file" name="attachment" id="arch" onChange={handleForm} accept="image/png, image/jpeg, .pdf" multiple></input>
 
@@ -123,9 +130,9 @@ const Contact = () => {
                     </label>
 
                     <label htmlFor="" className={style.label}>
-                    <input className={style.label1} name="phone" type="phone" value={form.phone} onChange={handleForm} placeholder="Telefono" />
-                    {error.phone && <p className={style.label2}>{error.phone}</p>}
-                        </label>
+                        <input className={style.label1} name="phone" type="phone" value={form.phone} onChange={handleForm} placeholder="Telefono" />
+                        {error.phone && <p className={style.label2}>{error.phone}</p>}
+                    </label>
 
                     <input type="hidden" name="_subject" value={form.asunto} />
                     <input type="hidden" name="_next" value="http://localhost:5173/"></input>
@@ -133,11 +140,11 @@ const Contact = () => {
                     <input type="hidden" name="_cc" value="agusdiazgarro@gmail.com"></input>
                     <input type="hidden" name="_template" value="table"></input>
 
-                    <button className={`${errors && style.activ}`}  type="submit" >Enviar</button>
+                    <button className={`${errors && style.activ}`} type="submit" >Enviar</button>
 
                 </form>
             </section>
-        </>
+        </Fragment>
     )
 }
 
