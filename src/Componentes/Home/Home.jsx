@@ -9,31 +9,31 @@ const information = [
     },
     {
         img: 'https://img.freepik.com/fotos-premium/abogado-o-notario-trabajando-documentos-e-informe-caso-importante-firma-abogados_122498-41.jpg',
-        title: 'Civil',
-        description: 'Lo hacemos como queremos asinsdflmascsbdnvjkc ajksdcnalskxmcalck ajcbaklsjcna,lsc jsdcknalkscnsd vksdcv a,c vkajv asdnmv kjadnfclakcm a,c acm ajkcnlamc '
+        title: 'Familia',
+        description: 'Vamos q podemos '
     },
     {
         img: 'https://img.freepik.com/fotos-premium/abogado-o-notario-trabajando-documentos-e-informe-caso-importante-firma-abogados_122498-41.jpg',
         title: 'Civil',
-        description: 'Lo hacemos como queremos'
+        description: 'Lo hacemos '
     }
 ]
 
 const abogados = [
     {
         img: "https://img.freepik.com/foto-gratis/captura-pantalla-persona-que-escribe-libro-mazo-sobre-mesa_181624-57173.jpg?t=st=1692324436~exp=1692325036~hmac=4a81080f2e7dd80e6578214f4edcaf1b6fcd95e184c3a934aacb28f8aeb2901e",
-        title: 'Penal',
+        title: 'Eduardo',
         description: 'Lo hacemos a nuestara manera'
     },
     {
         img: 'https://img.freepik.com/fotos-premium/abogado-o-notario-trabajando-documentos-e-informe-caso-importante-firma-abogados_122498-41.jpg',
-        title: 'Civil',
-        description: 'Lo hacemos como queremos asinsdflmascsbdnvjkc ajksdcnalskxmcalck ajcbaklsjcna,lsc jsdcknalkscnsd vksdcv a,c vkajv asdnmv kjadnfclakcm a,c acm ajkcnlamc '
+        title: 'Juan',
+        description: 'Lo hacemos como te gusta '
     },
     {
         img: 'https://img.freepik.com/fotos-premium/abogado-o-notario-trabajando-documentos-e-informe-caso-importante-firma-abogados_122498-41.jpg',
-        title: 'Civil',
-        description: 'Lo hacemos como queremos'
+        title: 'Felipe',
+        description: 'Lo hacemos completos'
     }
 ]
 

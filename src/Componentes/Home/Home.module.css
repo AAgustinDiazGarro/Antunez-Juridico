@@ -37,10 +37,18 @@
 
 .cardsCont{
     background-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .titleh2{
     text-align: center;
     padding-top: 2rem;
     color: blanchedalmond;
+}
+
+.wp{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
 }
